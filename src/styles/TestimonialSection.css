@@ -1,0 +1,229 @@
+/* Keyframe for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframe for sliding in from the right */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframe for fading in elements (for nested content) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Global Fix to remove horizontal scrollbar */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    color: #4a4a4a; 
+    background-color: #fffcf5; 
+    /* This is the key to preventing horizontal scrollbars */
+    overflow-x: hidden;
+}
+
+.testimonial-stats-section {
+    padding: 60px 0;
+    background-color: #fffcf5;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSection 0.8s ease-out forwards;
+}
+
+@keyframes fadeInSection {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Inner container for content */
+.testimonial-section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    opacity: 0;
+    animation: slideInFromLeft 0.8s ease-out 0.3s forwards;
+}
+
+.stat-card {
+    background-color: #bc164f;
+    color: #fffcf5;
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 260px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3,
+.stat-card p {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out 0.7s forwards;
+}
+
+.stat-card h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.testimonial-card {
+    background: #fffcf5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 50px rgba(0, 0, 0, 0.07);
+    max-width: 780px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    animation: slideInFromRight 0.8s ease-out 0.5s forwards;
+}
+
+.testimonial-logo,
+.testimonial-text {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out 0.9s forwards;
+}
+
+.testimonial-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #3d3d3d;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .testimonial-stats-section {
+        padding: 40px 0;
+    }
+
+    .testimonial-section-content {
+        flex-direction: column;
+        align-items: center;
+        /* Consistent padding for smaller screens */
+        padding: 0 20px; 
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        max-width: 380px;
+        animation: slideInFromLeft 0.8s ease-out 0.3s forwards;
+    }
+
+    .stat-card {
+        width: 70%; /* Ensures the card takes full width and doesn't overflow */
+        padding: 30px 20px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 600px;
+        padding: 30px;
+        margin-top: 30px;
+        animation: slideInFromRight 0.8s ease-out 0.5s forwards;
+    }
+
+    .stat-card h3 {
+        font-size: 2rem;
+    }
+
+    .stat-card p {
+        font-size: 1.2rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial-stats-section {
+        padding: 30px 0;
+    }
+
+    .testimonial-section-content {
+        /* Consistent padding for smaller screens */
+        padding: 0 15px; 
+    }
+
+    .stats {
+        gap: 15px;
+    }
+
+    .stat-card {
+        padding: 25px 15px; /* Decreased padding on smaller screens */
+    }
+
+    .testimonial-card {
+        padding: 25px;
+        margin-top: 20px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .stat-card p {
+        font-size: 1.1rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.3rem;
+    }
+
+    .testimonial-logo {
+        width: 120px;
+    }
+}

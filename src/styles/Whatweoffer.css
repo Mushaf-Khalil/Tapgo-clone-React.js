@@ -1,0 +1,241 @@
+/* Whatweoffer.css */
+
+body {
+    background-color: #f7f3ed; /* Keep body background as a base, or remove if .tapgo-offer will cover all */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a;
+    line-height: 1.5;
+}
+
+.tapgo-offer {
+    /* --- ADJUSTMENT: Remove max-width and margin from .tapgo-offer itself --- */
+    text-align: left;
+    padding: 60px 0; /* Adjust vertical padding; horizontal padding will be on inner container */
+    background: #fffcf5; /* This will make the background span full width */
+    /* ------------------------------------------------------------------------- */
+}
+
+/* --- NEW ADDITION: Create an inner container for content alignment --- */
+.tapgo-offer-content {
+    max-width: 1140px; /* Align with the grid's max-width */
+    margin: 0 auto; /* Center the content within the full-width section */
+    padding: 0 20px; /* Add horizontal padding to the content within the max-width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+/* ----------------------------------------------------------------- */
+
+.tapgo-offer h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+    font-weight: 700;
+}
+
+.tapgo-offer h2 span {
+    font-weight: 400;
+}
+
+.tapgo-offer strong {
+    color: #c2185b;
+}
+
+.offer-highlight {
+    color: #c2185b;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.offer-subtext {
+    color: #444;
+    margin-bottom: 40px;
+    font-size: 1rem;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    /* max-width and margin: 0 auto; are still here to center the grid within .tapgo-offer-content */
+    max-width: 1140px; /* Redundant if in .tapgo-offer-content, but keeping for clarity/consistency with grid */
+    margin: 0 auto;
+}
+
+.offer-card {
+    position: relative;
+    background-color: #fffcf5; /* Background of the card itself */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    aspect-ratio: 1.21 / 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.offer-card-image-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.offer-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 120px 40px;
+    border-top-right-radius: 120px 40px;
+    z-index: 1;
+}
+
+.offer-card-text-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 20px 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    line-height: 1.2;
+}
+
+.card-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1080px) {
+    .offer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 990px;
+    }
+    /* Adjust .tapgo-offer-content to match grid's max-width and margins */
+    .tapgo-offer-content {
+        max-width: 990px;
+    }
+    .offer-card-overlay {
+        height: 58%;
+        border-top-left-radius: 100px 35px;
+        border-top-right-radius: 100px 35px;
+    }
+    .offer-card-text-content {
+        height: 58%;
+        padding: 80px 18px 18px;
+    }
+    .card-title {
+        font-size: 1.4rem;
+    }
+    .card-description {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tapgo-offer h2 {
+        font-size: 2rem;
+    }
+    .offer-highlight {
+        font-size: 1.1rem;
+    }
+    .offer-subtext {
+        font-size: 0.95rem;
+    }
+    .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        max-width: 600px;
+    }
+    /* Adjust .tapgo-offer-content to match grid's max-width and margins */
+    .tapgo-offer-content {
+        max-width: 600px;
+        padding: 0 20px;
+    }
+    .offer-card {
+        border-radius: 15px;
+        aspect-ratio: 1.21 / 1;
+    }
+    .offer-card-overlay {
+        height: 55%;
+        border-top-left-radius: 80px 30px;
+        border-top-right-radius: 80px 30px;
+    }
+    .offer-card-text-content {
+        height: 55%;
+        padding: 60px 15px 15px;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+    .card-description {
+        font-size: 0.72rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tapgo-offer {
+        padding: 40px 0; /* No horizontal padding here */
+    }
+    .tapgo-offer h2 {
+        font-size: 1.8rem;
+    }
+    .offer-highlight {
+        font-size: 1rem;
+    }
+    .offer-subtext {
+        font-size: 0.9rem;
+    }
+    .offer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 320px;
+    }
+    /* Adjust .tapgo-offer-content to match grid's max-width and margins */
+    .tapgo-offer-content {
+        max-width: 320px;
+        padding: 0 15px;
+    }
+    .offer-card-overlay {
+        height: 50%;
+        border-top-left-radius: 70px 25px;
+        border-top-right-radius: 70px 25px;
+    }
+    .offer-card-text-content {
+        height: 50%;
+        padding: 40px 10px 10px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .card-description {
+        font-size: 0.68rem;
+    }
+}

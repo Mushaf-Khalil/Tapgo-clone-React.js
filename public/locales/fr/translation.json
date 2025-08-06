@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "services": "Services",
+    "pricing": "Tarifs",
+    "talk_to_us": "Contactez-nous"
+  },
+  "restaurant_section": {
+    "title_part1": "Transformez Votre Restaurant",
+    "title_part2": "TapGo — Aucun Coût de Matériel !",
+    "description": "Augmentez les revenus de votre restaurant, réduisez les coûts de main-d'œuvre et simplifiez le processus de commande et de paiement avec TapGo. Améliorez l'efficacité dans n'importe quel restaurant ou établissement de restauration rapide.",
+    "learn_more": "En savoir plus",
+    "get_started": "Commencer"
+  },
+  "footer": {
+    "quick_links": "Liens Rapides",
+    "terms_heading": "Termes et Conditions",
+    "home": "Accueil",
+    "pricing": "Tarifs",
+    "kiosk": "Kiosque",
+    "contact": "Contact",
+    "terms_link": "Termes et Conditions",
+    "privacy_policy": "Politique de confidentialité"
+  },
+  "faq_section": {
+    "title": "FAQ",
+    "subtitle": "Réponses aux questions fréquemment posées",
+    "items": [
+      {
+        "question": "💡 Qu'est-ce que TapGo exactement ?",
+        "answer": "TapGo est une solution tout-en-un pour la digitalisation des restaurants. Nous fournissons des bornes de commande en libre-service, la commande par code QR, le paiement mobile et un logiciel ultra-simple — le tout sans frais d'installation ni abonnements mensuels. Vous ne payez qu'un petit supplément par commande, plafonné à 349 CHF/mois."
+      },
+      {
+        "question": "🛠️ Y a-t-il des frais de matériel ou d'installation ?",
+        "answer": "Non, il n'y a pas de frais de matériel ou d'installation. TapGo fournit tout l'équipement nécessaire, y compris 2 bornes et une caisse enregistreuse, sans frais initiaux."
+      },
+      {
+        "question": "💰 Comment êtes-vous payés ?",
+        "answer": "Nous fonctionnons avec des frais par commande, plafonnés à 349 CHF par mois. Cela signifie que vous ne payez qu'une petite redevance pour chaque commande traitée par notre système, jusqu'à un montant mensuel maximum."
+      },
+      {
+        "question": "❌ Puis-je annuler à tout moment ?",
+        "answer": "Oui, vous pouvez annuler votre abonnement à tout moment sans pénalité. Nous croyons en l'offre de solutions flexibles pour votre entreprise."
+      },
+      {
+        "question": "📉 Que se passe-t-il si mon restaurant n'a pas beaucoup de commandes ?",
+        "answer": "Notre modèle de frais par commande est conçu pour être équitable pour toutes les entreprises. Si vous n'avez pas beaucoup de commandes, vos coûts resteront faibles, n'augmentant que si votre entreprise se développe. Le plafond mensuel garantit également que vos dépenses sont prévisibles."
+      },
+      {
+        "question": "🚀 En combien de temps puis-je être opérationnel ?",
+        "answer": "L'installation et la configuration sont généralement très rapides. Une fois que vous avez décidé de procéder, notre équipe travaillera efficacement pour que votre système soit opérationnel dans un délai très court."
+      },
+      {
+        "question": "📞 Avez-vous un service client ou un support ?",
+        "answer": "Oui, nous offrons un service client et un support complets pour garantir le bon fonctionnement de vos opérations. Notre équipe est disponible pour vous aider en cas de questions ou de problèmes."
+      },
+      {
+        "question": "🧑‍🍳 Qui peut utiliser TapGo ?",
+        "answer": "TapGo est conçu pour un large éventail d'établissements de restauration, y compris les restaurants, les fast-foods, les cafés et plus encore. Quiconque cherche à rationaliser les commandes, les paiements et à améliorer l'efficacité peut bénéficier de notre système."
+      },
+      {
+        "question": "📅 Que se passe-t-il après 3 ans d'utilisation ?",
+        "answer": "Après 3 ans d'utilisation, votre contrat peut généralement être renouvelé selon des conditions actualisées. Nous vous contacterons à l'approche de la date pour discuter de vos options et assurer la continuité du service."
+      }
+    ]
+  },
+  "testimonials": {
+    "stat1_text": "Taille moyenne du ticket",
+    "stat2_text": "Temps d'attente réduit",
+    "quote": "« L'approche de TAPGO est personnelle et orientée client. Tout au long du processus, leur communication a été rapide et transparente. Ils ont livré un superbe résultat final et le service après-vente est de premier ordre ! »"
+  },
+  "what_we_offer_section": {
+    "title_part1": "Qu'est-ce que",
+    "title_part2": "TapGo offre ?",
+    "subtitle_top": "Obtenez gratuitement du matériel et une installation d'une valeur de 8 000 CHF ! Comprend 2 bornes + une caisse enregistreuse – Payez 0 CHF",
+    "subtitle_bottom": "De la commande en ligne à la caisse et à la facturation, TapGo est la clé du succès des restaurants.",
+    "items": [
+      {
+        "title": "TPV",
+        "desc": "L'écran de point de vente améliore l'expérience client, stimule les ventes et simplifie les opérations."
+      },
+      {
+        "title": "Boutique en ligne",
+        "desc": "Une boutique en ligne améliore l'expérience utilisateur, génère plus de ventes et simplifie les opérations numériques."
+      },
+      {
+        "title": "Solutions QR",
+        "desc": "TapGo simplifie la commande avec notre système de commande par code QR pratique."
+      },
+      {
+        "title": "KIOSQUE",
+        "desc": "Le système de borne TapGo offre des options de libre-service, réduisant le temps d'attente et augmentant l'efficacité."
+      },
+      {
+        "title": "Portail Restaurant",
+        "desc": "Transformez les opérations de votre restaurant avec notre portail logiciel de gestion complet."
+      },
+      {
+        "title": "KDS",
+        "desc": "Optimisez l'efficacité de la cuisine avec le système KDS avancé de TapGo pour les restaurants."
+      }
+    ]
+  },
+  "contact_form": {
+    "title": "Contactez-nous",
+    "subheading": "Nous serions ravis de vous entendre ! Veuillez remplir le formulaire ci-dessous.",
+    "name_label": "Nom",
+    "email_label": "E-mail",
+    "phone_label": "Numéro de téléphone (optionnel)",
+    "message_label": "Message",
+    "send_button": "Envoyer le message",
+    "alert_message": "Message envoyé ! (Vérifiez la console pour les données)"
+  },
+  "custom_pos": {
+    "title_part1": "Améliorez votre entreprise avec",
+    "title_part2": "le système de caisse personnalisé TapGo",
+    "description1": "Entrez dans le futur avec TapGo, un système de point de vente conçu pour relever les défis uniques de votre secteur. Notre plateforme, développée avec la contribution de chefs d'entreprise chevronnés, garantit précision et efficacité dans chaque transaction.",
+    "feature_title": "Personnalisez et développez facilement vos menus",
+    "feature_description": "Nous savons qu'une borne réussit ou échoue en fonction d'une structure de menu bien développée, de photos délicieuses, d'ajouts logiques et de ventes incitatives ciblées. Ensemble, nous mettons en place une base solide et vous apprenons à mettre à jour votre menu vous-même. Introduisez quotidiennement de nouveaux plats et ajustez les prix.",
+    "learn_more": "En savoir plus"
+  },
+  "customers": {
+    "title": "Quelques-uns de nos clients satisfaits"
+  }
+}

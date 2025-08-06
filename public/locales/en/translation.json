@@ -1,0 +1,125 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "pricing": "Pricing",
+    "talk_to_us": "Talk to us"
+  },
+  "restaurant_section": {
+    "title_part1": "Transform Your Restaurant",
+    "title_part2": "TapGo — No Hardware Costs!",
+    "description": "Boost your restaurant’s revenue, cut down on labor costs, and simplify the ordering and payment process with TapGo. Elevate efficiency in any restaurant or fast-food establishment.",
+    "learn_more": "Learn More",
+    "get_started": "Get Started"
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "terms_heading": "Terms & Conditions",
+    "home": "Home",
+    "pricing": "Pricing",
+    "kiosk": "Kiosk",
+    "contact": "Contact",
+    "terms_link": "Terms & Conditions",
+    "privacy_policy": "Privacy Policy"
+  },
+  "faq_section": {
+    "title": "FAQ",
+    "subtitle": "Answers to frequently asked questions",
+    "items": [
+      {
+        "question": "💡 What exactly is TapGo?",
+        "answer": "TapGo is an all-in-one solution for digitizing restaurants. We provide self-ordering kiosks, QR code ordering, mobile payment, and ultra-simple software — all with no setup fees or monthly subscriptions. You only pay a small fee per order, capped at CHF 349/month."
+      },
+      {
+        "question": "🛠️ Are there any hardware or installation fees?",
+        "answer": "No, there are no hardware or installation fees. TapGo provides all necessary equipment, including 2 kiosks and a cash register, at no upfront cost."
+      },
+      {
+        "question": "💰 How are you paid?",
+        "answer": "We operate on a per-order fee, capped at CHF 349 per month. This means you only pay a small fee for each order processed through our system, up to a maximum monthly amount."
+      },
+      {
+        "question": "❌ Can I cancel at any time?",
+        "answer": "Yes, you can cancel your subscription at any time without penalty. We believe in providing flexible solutions for your business."
+      },
+      {
+        "question": "📉 What if my restaurant doesn't take many orders?",
+        "answer": "Our per-order fee model is designed to be fair for all businesses. If you don't take many orders, your costs will remain low, only increasing as your business grows. The monthly cap also ensures your expenses are predictable."
+      },
+      {
+        "question": "🚀 How quickly can I be up and running?",
+        "answer": "Installation and setup are typically very quick. Once you decide to proceed, our team will work efficiently to get your system operational in a very short timeframe."
+      },
+      {
+        "question": "📞 Do you have customer service or support?",
+        "answer": "Yes, we offer comprehensive customer service and support to ensure your operations run smoothly. Our team is available to assist with any questions or issues you may encounter."
+      },
+      {
+        "question": "🧑‍🍳 Who can use TapGo?",
+        "answer": "TapGo is designed for a wide range of food service establishments, including restaurants, fast-food outlets, cafes, and more. Anyone looking to streamline ordering, payments, and boost efficiency can benefit from our system."
+      },
+      {
+        "question": "📅 What happens after 3 years of use?",
+        "answer": "After 3 years of use, your contract can typically be renewed under updated terms. We will contact you closer to the time to discuss your options and ensure continued service."
+      }
+    ]
+  },
+  "testimonials": {
+    "stat1_text": "Average ticket size",
+    "stat2_text": "Reduced waiting time",
+    "quote": "“TAPGO approach is personal and customer-oriented. During the entire process their communication was prompt and transparent. they delivered a superb end result and the after-sales service is top notch!”"
+  },
+  "what_we_offer_section": {
+    "title_part1": "What Does",
+    "title_part2": "TapGo Offer?",
+    "subtitle_top": "Get 8,000 CHF worth of hardware and installation for FREE! Includes 2 kiosks + cash register – Pay 0 CHF",
+    "subtitle_bottom": "From online ordering to POS and billing, TapGo serves the key to restaurant success.",
+    "items": [
+      {
+        "title": "POS",
+        "desc": "POS display enhances customer experience, boosts sales, and streamlines operations."
+      },
+      {
+        "title": "Online Store",
+        "desc": "An online store enhances user experience, drives more sales, and streamlines digital operations."
+      },
+      {
+        "title": "QR Solutions",
+        "desc": "TapGo simplifies ordering with our convenient QR code ordering system."
+      },
+      {
+        "title": "KIOSK",
+        "desc": "TapGo Kiosk system provides self-service options, reducing wait time and increasing efficiency."
+      },
+      {
+        "title": "Restaurant Portal",
+        "desc": "Transform your restaurant operations with our comprehensive management software portal."
+      },
+      {
+        "title": "KDS",
+        "desc": "Optimize kitchen efficiency with TapGo advanced KDS system for restaurants."
+      }
+    ]
+  },
+  "contact_form": {
+    "title": "Talk to Us",
+    "subheading": "We would love to hear from you! Please fill out the form below.",
+    "name_label": "Name",
+    "email_label": "Email",
+    "phone_label": "Phone Number (Optional)",
+    "message_label": "Message",
+    "send_button": "Send Message",
+    "alert_message": "Message sent! (Check console for data)"
+  },
+  "custom_pos": {
+    "title_part1": "Enhance Your Business with",
+    "title_part2": "TapGo Custom POS System",
+    "description1": "Step into the future with TapGo, a point-of-sale system designed to meet the unique challenges of your industry. Our platform, developed with input from seasoned business owners, ensures precision and efficiency in every transaction.",
+    "feature_title": "Easily customize and extend menus",
+    "feature_description": "We know that a kiosk stands or falls on a well developed menu structure, delicious photos, logical additions and targeted upselling. Together, we set up a solid base and teach you how to update your menu yourself. Daily, introduce new dishes and adjust prices.",
+    "learn_more": "Learn More"
+  },
+  "customers": {
+    "title": "Some of our happy customers"
+  }
+}

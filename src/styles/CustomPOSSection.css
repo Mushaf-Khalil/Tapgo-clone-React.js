@@ -1,0 +1,143 @@
+/* custom.css */
+
+/* Important: This ensures the overall page background is the light beige,
+   which then extends across the .pos-content-column.
+   If you have a global body style elsewhere, you might want to manage this there. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3ed; /* Overall background color for the page */
+}
+
+.custom-pos-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+    max-width: 1400px; /* Adjust max-width as needed for the section container */
+    margin: 40px auto; /* Add some top/bottom margin and center the section */
+    background-color: transparent; /* The section itself is transparent, allowing the body's background to show */
+    min-height: 600px; /* Adjust min-height as per content needs */
+    border-radius: 10px; /* Optional: Add some rounding to the overall section corners */
+    overflow: hidden; /* Ensures any rounded corners or content within are clipped */
+}
+
+.pos-image-column {
+    flex: 1; /* Takes up available space */
+    min-width: 450px; /* Minimum width before wrapping */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Increased padding around the image */
+    background-color: #f7f3ed; /* Beige background specifically for the left image column, matching content */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.pos-mockup-image {
+    max-width: 100%; /* Increased max-width to make the image larger within its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+.pos-content-column {
+    flex: 1; /* Takes up available space */
+    min-width: 450px; /* Minimum width before wrapping */
+    background-color: #f7f3ed; /* Light beige/off-white for the right content column */
+    padding: 80px 60px; /* Generous padding as seen in the original image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content if there's extra space */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box;
+}
+
+.pos-content-column h2 {
+    font-size: 2.5rem; /* Large heading size */
+    color: #1a1a1a; /* Dark text color */
+    margin-bottom: 20px;
+    line-height: 1.2; /* Better line spacing for the heading */
+}
+
+.pos-content-column h2 strong {
+    color: #1a1a1a; /* Keep strong text same dark color, or adjust if you want a different accent */
+}
+
+.pos-content-column p {
+    font-size: 1rem;
+    color: #555; /* Medium dark text color for paragraphs */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pos-content-column p strong {
+    font-weight: bold; /* Ensure strong tag is bold */
+    color: #333; /* Slightly darker for emphasized text */
+}
+
+.learn-more-button {
+    display: inline-flex; /* Use flex to align arrow with text */
+    align-items: center;
+    background-color: #c2185b; /* Reddish button color */
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 8px; /* Slightly rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    max-width: fit-content; /* Button only takes content width */
+}
+
+.learn-more-button:hover {
+    background-color: #a0104a; /* Darker red on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .custom-pos-section {
+        flex-direction: column; /* Stack columns vertically on tablets and smaller */
+        margin: 20px auto; /* Adjust margin for smaller screens */
+    }
+
+    .pos-image-column,
+    .pos-content-column {
+        min-width: unset; /* Remove min-width when stacked */
+        width: 100%; /* Take full width */
+    }
+
+    .pos-image-column {
+        padding: 40px 20px; /* Adjust padding for image on smaller screens */
+        background-color: #f7f3ed; /* Keep beige background for image column when stacked */
+    }
+
+    .pos-content-column {
+        padding: 60px 40px; /* Adjust padding for content on smaller screens */
+        background-color: #f7f3ed; /* Keep beige background for content column when stacked */
+    }
+
+    .pos-content-column h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .pos-image-column {
+        padding: 30px 15px;
+    }
+
+    .pos-content-column {
+        padding: 40px 20px;
+    }
+
+    .pos-content-column h2 {
+        font-size: 1.8rem;
+    }
+
+    .pos-content-column p {
+        font-size: 0.9rem;
+    }
+
+    .learn-more-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}

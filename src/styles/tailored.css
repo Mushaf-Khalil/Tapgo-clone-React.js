@@ -1,0 +1,206 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    color: #4a4a4a; 
+    background-color: #fffcf5; 
+    /* This is the key to preventing horizontal scrollbars */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Keyframe for sliding in from the bottom */
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframe for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tailored {
+    background-color: #fffcf5;
+    padding: 60px 0;
+}
+
+.tailored-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fffcf5;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInContainer 0.8s ease-out forwards;
+}
+
+@keyframes fadeInContainer {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tailored-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    min-width: 300px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15%;
+    justify-items: center;
+    animation: slideInFromBottom 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.tailored-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    aspect-ratio: 16 / 9;
+}
+
+/* Left Section (text) */
+.tailored-text {
+    flex: 1;
+    min-width: 320px;
+    animation: slideInFromLeft 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.tailored-text h2 {
+    font-size: 30px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.feature-icon {
+    font-size: 30px;
+    color: #C9004D;
+    flex-shrink: 0;
+}
+
+.feature h4 {
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.feature p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tailored-container {
+        flex-direction: column;
+        /* Ensures padding is applied on all sides for the "little padding on left" */
+        padding: 24px;
+        align-items: center; 
+        gap: 24px; 
+    }
+
+    .tailored-images {
+        order: 1;
+        grid-template-columns: 1fr; 
+        margin-top: 0;
+        /* Reset min-width to ensure it doesn't cause a scrollbar */
+        min-width: unset; 
+        width: 100%;
+        animation: slideInFromBottom 0.8s ease-out forwards;
+    }
+    
+    .tailored-images img {
+        width: 100%;
+    }
+
+    .tailored-text {
+        order: 2;
+        min-width: unset; /* Remove min-width to prevent overflow */
+        width: 100%;
+        animation: slideInFromLeft 0.8s ease-out 0.2s forwards;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-icon {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tailored-container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .tailored-text h2 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .feature h4 {
+        font-size: 16px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+}
