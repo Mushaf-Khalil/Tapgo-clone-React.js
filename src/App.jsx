@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './styles/main.css'; // Your main global styles
-import Navbar from './components/Navbar';
+import './styles/main.css'; 
+// un cooment the bellow to use it just for git concepting 
+// import Navbar from './components/Navbar';
 import RestaurantSection from './components/ResturantSection';
 import TailoredSection from './components/TailoredSection';
 import Customers from './components/Customers';
